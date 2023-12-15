@@ -16,7 +16,7 @@ struct LoginView: View {
             
             VStack {
                 HStack {
-                    Text("Welcome Back!")
+                    Text("Welcome to CarGo!")
                         .font(.largeTitle)
                         .bold()
                     Spacer()
@@ -31,9 +31,13 @@ struct LoginView: View {
                     TextField("Email", text: $email)
                     Spacer()
                     
-                    Image(systemName: "checkmark")
-                        .fontWeight(.bold)
-                        .foregroundColor(.green)
+                    if(email.count != 0) {
+                        Image(systemName: "checkmark")
+                            .fontWeight(.bold)
+                            .foregroundColor(.green)
+                    }
+                    
+                    
                 }
                 .padding()
                 .overlay(
@@ -48,9 +52,13 @@ struct LoginView: View {
                     TextField("Password", text: $password)
                     Spacer()
                     
-                    Image(systemName: "checkmark")
-                        .fontWeight(.bold)
-                        .foregroundColor(.green)
+                    if(password.count != 0){
+                        Image(systemName: "checkmark")
+                            .fontWeight(.bold)
+                            .foregroundColor(.green)
+                    }
+                    
+                    
                 }
                 .padding()
                 .overlay(
@@ -59,6 +67,32 @@ struct LoginView: View {
                         .foregroundColor(.black)
                 )
                 .padding()
+                
+                Button(action: {}) {
+                    Text("Don't have an account?")
+                        .foregroundColor(.black.opacity(0.7))
+                }
+                
+                Spacer()
+                Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Text("Sign In")
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        .bold()
+                        
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                    
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.black)
+                        )
+                        .padding(.horizontal)
+                }
             }
         }
     }

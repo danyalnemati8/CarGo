@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var email: String = ""
+    @State private var password: String = ""
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
@@ -28,7 +29,36 @@ struct LoginView: View {
                 HStack {
                     Image(systemName: "mail")
                     TextField("Email", text: $email)
+                    Spacer()
+                    
+                    Image(systemName: "checkmark")
+                        .fontWeight(.bold)
+                        .foregroundColor(.green)
                 }
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding()
+                
+                HStack {
+                    Image(systemName: "lock")
+                    TextField("Password", text: $password)
+                    Spacer()
+                    
+                    Image(systemName: "checkmark")
+                        .fontWeight(.bold)
+                        .foregroundColor(.green)
+                }
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(lineWidth: 2)
+                        .foregroundColor(.black)
+                )
+                .padding()
             }
         }
     }

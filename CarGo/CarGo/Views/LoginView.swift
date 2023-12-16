@@ -32,9 +32,9 @@ struct LoginView: View {
                     Spacer()
                     
                     if(email.count != 0) {
-                        Image(systemName: "checkmark")
+                        Image(systemName: email.isValidEmail() ? "checkmark": "xmark")
                             .fontWeight(.bold)
-                            .foregroundColor(.green)
+                            .foregroundColor(email.isValidEmail() ? .green : .red)
                     }
                     
                     

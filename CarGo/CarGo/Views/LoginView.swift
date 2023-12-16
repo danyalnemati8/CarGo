@@ -10,6 +10,16 @@ import SwiftUI
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    
+    //min 6 charecters
+    //atleast 1 special charecter
+    //atleast 1 uppercase
+    
+    private func isValidPassword(_ password: String) -> Bool {
+        let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
+        return passwordRegex.evaluate(with: password)
+
+    }
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
@@ -49,13 +59,13 @@ struct LoginView: View {
                 
                 HStack {
                     Image(systemName: "lock")
-                    TextField("Password", text: $password)
+                    SecureField("Password", text: $password)
                     Spacer()
                     
                     if(password.count != 0){
-                        Image(systemName: "checkmark")
+                        Image(systemName: isValidPassword(password) ? "checkmark": "xmark")
                             .fontWeight(.bold)
-                            .foregroundColor(.green)
+                            .foregroundColor(isValidPassword(password) ?.green :.red)
                     }
                     
                     

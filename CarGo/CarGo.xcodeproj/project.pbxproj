@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A1C88222B2D23B000AD6741 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C88212B2D23B000AD6741 /* String.swift */; };
+		0A1C88242B311A4D00AD6741 /* SingupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C88232B311A4D00AD6741 /* SingupView.swift */; };
 		0A3CCED82B27DDBB00DF8E1E /* CarGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCED72B27DDBB00DF8E1E /* CarGoApp.swift */; };
 		0A3CCEDA2B27DDBB00DF8E1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCED92B27DDBB00DF8E1E /* ContentView.swift */; };
 		0A3CCEDC2B27DDBC00DF8E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCEDB2B27DDBC00DF8E1E /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0A1C88212B2D23B000AD6741 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = ../../../../../Documents/String.swift; sourceTree = "<group>"; };
+		0A1C88232B311A4D00AD6741 /* SingupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingupView.swift; path = ../../../../../Documents/SingupView.swift; sourceTree = "<group>"; };
 		0A3CCED42B27DDBB00DF8E1E /* CarGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3CCED72B27DDBB00DF8E1E /* CarGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGoApp.swift; sourceTree = "<group>"; };
 		0A3CCED92B27DDBB00DF8E1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				0A3CCEE82B27E26600DF8E1E /* LoginView.swift */,
+				0A1C88232B311A4D00AD6741 /* SingupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				0A3CCEE92B27E26600DF8E1E /* LoginView.swift in Sources */,
 				0A3CCEDA2B27DDBB00DF8E1E /* ContentView.swift in Sources */,
 				0A1C88222B2D23B000AD6741 /* String.swift in Sources */,
+				0A1C88242B311A4D00AD6741 /* SingupView.swift in Sources */,
 				0A3CCED82B27DDBB00DF8E1E /* CarGoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

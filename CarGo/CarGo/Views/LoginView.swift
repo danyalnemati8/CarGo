@@ -10,6 +10,7 @@ import FirebaseAuth
 
 struct LoginView: View {
     @Binding var currentShowingView: String
+    @AppStorage("uid") var userID: String = ""
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -104,6 +105,9 @@ struct LoginView: View {
                         }
                         if let authResult =  authResult {
                             print(authResult.user.uid)
+                            withAnimation {
+                                userID = authResult.user.uid
+                            }
 
                         }
                     }

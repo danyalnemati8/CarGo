@@ -38,6 +38,7 @@
 		0A1C885B2B3CEA4300AD6741 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1C885A2B3CEA4300AD6741 /* FirebaseRemoteConfigSwift */; };
 		0A1C885D2B3CEA4300AD6741 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1C885C2B3CEA4300AD6741 /* FirebaseStorage */; };
 		0A1C885F2B3CEA4300AD6741 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0A1C885E2B3CEA4300AD6741 /* FirebaseStorageCombine-Community */; };
+		0A1C88632B4620FB00AD6741 /* ImageCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1C88622B4620FB00AD6741 /* ImageCaptureView.swift */; };
 		0A3CCED82B27DDBB00DF8E1E /* CarGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCED72B27DDBB00DF8E1E /* CarGoApp.swift */; };
 		0A3CCEDA2B27DDBB00DF8E1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCED92B27DDBB00DF8E1E /* ContentView.swift */; };
 		0A3CCEDC2B27DDBC00DF8E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCEDB2B27DDBC00DF8E1E /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		0A1C88232B311A4D00AD6741 /* SingupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingupView.swift; path = ../../../../../Documents/SingupView.swift; sourceTree = "<group>"; };
 		0A1C88252B3CBCE100AD6741 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthView.swift; path = ../../../../../Documents/AuthView.swift; sourceTree = "<group>"; };
 		0A1C88272B3CE97C00AD6741 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A1C88622B4620FB00AD6741 /* ImageCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageCaptureView.swift; path = ../../../../../Documents/ImageCaptureView.swift; sourceTree = "<group>"; };
 		0A3CCED42B27DDBB00DF8E1E /* CarGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3CCED72B27DDBB00DF8E1E /* CarGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarGoApp.swift; sourceTree = "<group>"; };
 		0A3CCED92B27DDBB00DF8E1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				0A3CCEE82B27E26600DF8E1E /* LoginView.swift */,
 				0A1C88232B311A4D00AD6741 /* SingupView.swift */,
 				0A1C88252B3CBCE100AD6741 /* AuthView.swift */,
+				0A1C88622B4620FB00AD6741 /* ImageCaptureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3CCEE92B27E26600DF8E1E /* LoginView.swift in Sources */,
+				0A1C88632B4620FB00AD6741 /* ImageCaptureView.swift in Sources */,
 				0A3CCEDA2B27DDBB00DF8E1E /* ContentView.swift in Sources */,
 				0A1C88262B3CBCE100AD6741 /* AuthView.swift in Sources */,
 				0A1C88222B2D23B000AD6741 /* String.swift in Sources */,

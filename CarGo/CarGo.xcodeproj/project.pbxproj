@@ -46,6 +46,7 @@
 		0A3CCEDC2B27DDBC00DF8E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCEDB2B27DDBC00DF8E1E /* Assets.xcassets */; };
 		0A3CCEDF2B27DDBC00DF8E1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CCEDE2B27DDBC00DF8E1E /* Preview Assets.xcassets */; };
 		0A3CCEE92B27E26600DF8E1E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CCEE82B27E26600DF8E1E /* LoginView.swift */; };
+		0A5A67642B560FAF00D36BDA /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A67632B560FAF00D36BDA /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		0A3CCEDB2B27DDBC00DF8E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3CCEDE2B27DDBC00DF8E1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A3CCEE82B27E26600DF8E1E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0A5A67632B560FAF00D36BDA /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				0A1C88252B3CBCE100AD6741 /* AuthView.swift */,
 				0A1C88622B4620FB00AD6741 /* ImageCaptureView.swift */,
 				0A3B2B512B51E11E0020A482 /* HeaderView.swift */,
+				0A5A67632B560FAF00D36BDA /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				0A1C88222B2D23B000AD6741 /* String.swift in Sources */,
 				0A1C88242B311A4D00AD6741 /* SingupView.swift in Sources */,
 				0A3CCED82B27DDBB00DF8E1E /* CarGoApp.swift in Sources */,
+				0A5A67642B560FAF00D36BDA /* PostView.swift in Sources */,
 				0A3B2B522B51E11E0020A482 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

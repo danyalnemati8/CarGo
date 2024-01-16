@@ -28,9 +28,21 @@ struct PostView: View {
                         .font(.system(size: 14, weight: .regular))
                         .foregroundColor(.gray)
                 }
+                .padding(.leading, 3)
                 Spacer()
+                
+                Button {
+                    
+                } label: {
+                    Image(systemName: "ellipsis")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 24, height:20)
+                        .foregroundColor(.gray)
+                }
             }
         }
+        .padding(.horizontal, 6)
     }
 }
 

@@ -14,25 +14,32 @@ struct ContentView: View {
     
      
     var body: some View {
-        if userID == "" {
-            AuthView()
-        } else {
-            Text("Logged In! \nYour user id is \(userID)")
-            
-            Button(action: {
-                let firebaseAuth = Auth.auth()
-                do {
-                  try firebaseAuth.signOut()
-                    withAnimation {
-                        userID = ""
+        ZStack {
+            Color.black.ignoresSafeArea()
+            VStack {
+                if userID == "" {
+                    AuthView()
+                } else {
+                    Text("Logged In! \nYour user id is \(userID)")
+                    
+                    Button(action: {
+                        let firebaseAuth = Auth.auth()
+                        do {
+                          try firebaseAuth.signOut()
+                            withAnimation {
+                                userID = ""
+                            }
+                        } catch let signOutError as NSError {
+                          print("Error signing out: %@", signOutError)
+                        }
+                    } ) {
+                        Text("Sign Out")
                     }
-                } catch let signOutError as NSError {
-                  print("Error signing out: %@", signOutError)
                 }
-            } ) {
-                Text("Sign Out")
             }
+                
         }
+        
       
     }
 }

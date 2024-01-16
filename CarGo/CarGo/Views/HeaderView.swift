@@ -38,5 +38,5 @@ struct HeaderView: View {
 }
 
 #Preview {
-    HeaderView()
+    ContentView()
 }

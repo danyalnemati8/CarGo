@@ -17,10 +17,14 @@ struct ContentView: View {
         ZStack {
             Color.black.ignoresSafeArea()
             VStack {
+                
+                HeaderView()
+                Spacer()
                 if userID == "" {
                     AuthView()
                 } else {
                     Text("Logged In! \nYour user id is \(userID)")
+                        .foregroundColor(.white)
                     
                     Button(action: {
                         let firebaseAuth = Auth.auth()

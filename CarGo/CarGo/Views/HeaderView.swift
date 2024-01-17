@@ -33,6 +33,7 @@ struct HeaderView: View {
                         .clipShape(Circle())
                 }
             }
+            .foregroundColor(.white)
         }
     }
 }

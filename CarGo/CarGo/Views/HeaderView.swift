@@ -26,7 +26,7 @@ struct HeaderView: View {
                 Button {
                     
                 } label: {
-                    Image(systemName: "person.crop.circle.fill")
+                    Image("ppf")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 26, height: 26)

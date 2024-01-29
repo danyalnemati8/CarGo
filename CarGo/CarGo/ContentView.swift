@@ -20,28 +20,31 @@ struct ContentView: View {
                 
                 HeaderView()
                 Spacer()
-                if userID == "" {
-                    AuthView()
-                } else {
-                    Text("Logged In! \nYour user id is \(userID)")
-                        .foregroundColor(.white)
-                    
-                    Button(action: {
-                        let firebaseAuth = Auth.auth()
-                        do {
-                          try firebaseAuth.signOut()
-                            withAnimation {
-                                userID = ""
-                            }
-                        } catch let signOutError as NSError {
-                          print("Error signing out: %@", signOutError)
-                        }
-                    } ) {
-                        Text("Sign Out")
-                    }
-                }
-            }
                 
+                //log in works so do not really need this anymore
+//                if userID == "" {
+//                    AuthView()
+//                } else {
+//                    Text("Logged In! \nYour user id is \(userID)")
+//                        .foregroundColor(.white)
+//                    
+//                    Button(action: {
+//                        let firebaseAuth = Auth.auth()
+//                        do {
+//                          try firebaseAuth.signOut()
+//                            withAnimation {
+//                                userID = ""
+//                            }
+//                        } catch let signOutError as NSError {
+//                          print("Error signing out: %@", signOutError)
+//                        }
+//                    } ) {
+//                        Text("Sign Out")
+//                    }
+//                }
+            }
+            
+            PostView()
         }
         
       

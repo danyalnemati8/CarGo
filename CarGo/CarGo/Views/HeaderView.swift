@@ -26,7 +26,7 @@ struct HeaderView: View {
                 Button {
                     
                 } label: {
-                    Image(systemName: "person.crop.circle.fill")
+                    Image("ppf")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 26, height: 26)
@@ -34,6 +34,20 @@ struct HeaderView: View {
                 }
             }
             .foregroundColor(.white)
+            .padding(.horizontal)
+            
+            HStack(spacing: 20) {
+                Button {
+                    
+                } label: {
+                    Text("Home")
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundColor(.white)
+                    Text("Explore")
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundColor(.gray)
+                }
+            }
         }
     }
 }

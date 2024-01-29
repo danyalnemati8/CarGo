@@ -14,7 +14,7 @@ struct PostView: View {
                 Button {
                     
                 } label: {
-                    Image("avatar")
+                    Image("ppf")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 36, height: 36)
@@ -47,5 +47,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView()
+    ContentView()
 }
